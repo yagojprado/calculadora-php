@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1195px;
+    margin: 100px auto;
+}
+
+.calculadora-menu{
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.calculadora-menu h1{
+    color: #333333;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0, 0.15) 2px 2px;
+    border-bottom: solid 3px #4a4a4a;
+}
+
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input[type="number"] {
+    height: 40px;
+    width: 220px;
+    border-radius:  10px;
+    border: 0;
+    padding: 10px;
+    text-align: center;
+    background: #f5f5f5;
+    color: #333333;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+select {
+    font-size: 16px;
+    margin-top: 70px;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    appearance: none;
+    text-align: center;
+    background: #f5f5f5;
+    color: #333333;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px 5px;
+}
+
+option{
+    font-size: 14px;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    height: 40px;
+    width: 200px;
+    background: #4a4a4a;
+    margin-top: 14px;
+    border: 1px solid #4a4a4a;
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover, input[type="number"]:hover, select:hover {
+    background-color: #333333;
+    cursor: pointer;
+    color: white;
+}
+
+button[type="submit"], input[type="number"], select {
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .calculadora-menu {
+        width: 80%;
+        height: 400px;
+    }
+
+    input[type="number"] {
+        width: 80%;
+    }
+
+    select {
+        width: 80%;
+    }
+
+    option {
+        width: 80%;
+    }
+
+    button[type="submit"] {
+        width: 80%;
+        margin: 0;
+    }
+}
