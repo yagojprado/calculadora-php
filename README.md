@@ -1,2 +1,2 @@
 # calculadora-php
-Calculadora feita usando servidor laravel com php, html e css.
+Calculadora feita usando framework larevel php, html e css.
